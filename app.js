@@ -21,7 +21,7 @@ https
       //convert the json file to string
       const jsonData = JSON.stringify(finalData);
 
-      //write the the file to the desired directory
+      //write the the file to  desired directory
       fs.writeFile("./result/posts.json", jsonData, (error) => {
         if (error) {
           throw new Error(error.message);
