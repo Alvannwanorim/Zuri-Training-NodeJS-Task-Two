@@ -15,7 +15,7 @@ https
     res.on("end", () => {
       console.log("Response ended: ");
 
-      //join and parse the entire data
+      //join and parse the entire data nobtained
       const finalData = JSON.parse(Buffer.concat(data).toString());
 
       //convert the json file to string
