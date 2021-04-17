@@ -15,13 +15,13 @@ https
     res.on("end", () => {
       console.log("Response ended: ");
 
-      //join and parse the entire data nobtained
+      //join and parse data nobtained
       const finalData = JSON.parse(Buffer.concat(data).toString());
 
       //convert the json file to string
       const jsonData = JSON.stringify(finalData);
 
-      //write the the file to  desired directory
+      //write the the file to the desired directory
       fs.writeFile("./result/posts.json", jsonData, (error) => {
         if (error) {
           throw new Error(error.message);
